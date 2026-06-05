@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  autofit-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: api_autofit_prod_container
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - MONGO_URI=mongodb://autofit-nosql-db:27017/autofit_db
+      - JWT_SECRET=FirmaCriptograficaSantiagoYbarraDAM2026
+      - OPENAI_API_KEY=
+    depends_on:
+      - autofit-nosql-db
+    restart: always
+
+  autofit-nosql-db:
+    image: mongo:6.0.8
+    container_name: mongodb_autofit_prod_container
+    ports:
+      - "27017:27017"
+    volumes:
+      - datos_persistidos_prod:/data/db
+    restart: always
+
+volumes:
+  datos_persistidos_prod:

@@ -1,0 +1,10 @@
+{.git{,hub},README.md,autofit-v2,backend,frontend-web,mobile} 
+  "name": "autofit-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {.git{,hub},README.md,autofit-v2,backend,frontend-web,mobile} 
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  ,
+  "dependencies": {.git{,hub},README.md,autofit-v2,backend,frontend-web,mobile} 
+

@@ -1,0 +1,11 @@
+{.git{,hub},README.md,autofit-v2,backend,frontend-web,mobile} 
+  "name": "autofit-backend",
+  "version": "1.0.0",
+  "description": "API REST y Pipeline VUI para AutoFit v2",
+  "main": "src/app.js",
+  "scripts": {.git{,hub},README.md,autofit-v2,backend,frontend-web,mobile} 
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  ,
+  "dependencies": {.git{,hub},README.md,autofit-v2,backend,frontend-web,mobile} 
+

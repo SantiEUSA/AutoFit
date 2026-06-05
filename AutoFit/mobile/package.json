@@ -1,0 +1,10 @@
+{.git{,hub},README.md,autofit-v2,backend,frontend-web,mobile} 
+  "name": "autofit-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {.git{,hub},README.md,autofit-v2,backend,frontend-web,mobile} 
+    "android": "react-native run-android",
+    "ios": "react-native run-ios"
+  ,
+  "dependencies": {.git{,hub},README.md,autofit-v2,backend,frontend-web,mobile} 
+

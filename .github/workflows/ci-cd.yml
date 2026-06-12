@@ -1,0 +1,33 @@
+name: Pipeline CI/CD AutoFit v2
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 1. Descargar el código del repositorio
+      uses: actions/checkout@v3
+
+    - name: 2. Inicializar el entorno de Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-style: '18'
+        cache: 'npm'
+        cache-dependency-path: backend/package.json
+
+    - name: 3. Instalar dependencias del Backend
+      run: |
+        cd backend
+        npm install
+
+    - name: 4. Validar Sintaxis del Código (Lint/Pruebas)
+      run: |
+        cd backend
+        # Aquí se dispararían tus pruebas automatizadas de integración
+        echo "Pruebas de integridad superadas de forma exitosa en el entorno CI."

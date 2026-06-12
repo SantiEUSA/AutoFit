@@ -1,0 +1,9 @@
+node_modules/
+.expo/
+*.jks
+*.p8
+*.P11
+*.apk
+*.aar
+*.bundle
+*.smoothie

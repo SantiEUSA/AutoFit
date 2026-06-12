@@ -11,8 +11,8 @@ services:
     environment:
       - NODE_ENV=production
       - MONGO_URI=mongodb://autofit-nosql-db:27017/autofit_db
-      - JWT_SECRET=FirmaCriptograficaSantiagoYbarraDAM2026
-      - OPENAI_API_KEY=
+      - JWT_SECRET=SantiagoYbarraDAM2026
+      - OPENAI_API_KEY=172.23.20.228:8080
     depends_on:
       - autofit-nosql-db
     restart: always

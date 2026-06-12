@@ -1,11 +1,31 @@
-{.git{,hub},README.md,autofit-v2,backend,frontend-web,mobile} 
+{
   "name": "autofit-backend",
-  "version": "1.0.0",
-  "description": "API REST y Pipeline VUI para AutoFit v2",
+  "version": "2.0.0",
+  "description": "Servidor central API para el ecosistema AutoFit v2 con integracion VUI",
   "main": "src/app.js",
-  "scripts": {.git{,hub},README.md,autofit-v2,backend,frontend-web,mobile} 
+  "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon src/app.js"
-  ,
-  "dependencies": {.git{,hub},README.md,autofit-v2,backend,frontend-web,mobile} 
-
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "mongoose",
+    "openai",
+    "vui"
+  ],
+  "author": "Santiago Ybarra",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.1",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.38.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
